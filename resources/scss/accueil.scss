@@ -1,4 +1,8 @@
 @import "_variables.scss";
+section:not(.section1) {
+   padding-left: calc($largeurSideBar/2);
+ }
+ 
 #Accueil{
     margin: 0;
     padding: 0;
@@ -43,6 +47,164 @@
                 backdrop-filter: blur(10px);
                 text-shadow: 0px 0px 1px $vertSombre1;
             }
+        }
+    }
+
+    .section2{
+        position: relative;
+        top: -200px;
+        display: flex;
+        justify-content: center;
+        padding: 0 !important;
+        width: calc(100vw - $largeurSideBar);
+
+        &>div{
+            width:80%;
+            margin:0 auto;
+            padding:0;
+            display: flex;
+            justify-content: space-between;
+
+            &>div{
+                width: 30%;
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                box-shadow: 0px 0px 5px $gris;
+
+               &:nth-child(1){
+                &>div{
+                    padding: 10px;
+                    min-height: 50%;
+                    &:nth-child(1){
+                        background-image: linear-gradient(90deg, #00915a, #5ec66b);
+                    }
+                    &:nth-child(2){
+                        background-color: #fff;
+                        color: $gris;
+                    }
+                }
+               }
+
+               &:nth-child(2){
+                &>div{
+                    padding: 10px;
+                    min-height: 50%;
+                    &:nth-child(1){
+                        background-image: linear-gradient(90deg, #2491ee, #1cc7f2);
+                    }
+                    &:nth-child(2){
+                        background-color: #fff;
+                        color: $gris;
+                    }
+                }
+               }
+               &:nth-child(3){
+                &>div{
+                    padding: 10px;
+                    min-height: 50%;
+                    &:nth-child(1){
+                        background-image: linear-gradient(90deg, #7e50a8, #d563a7);
+                    }
+                    &:nth-child(2){
+                        background-color: #fff;
+                        color: $gris;
+                    }
+                }
+               }
+                
+                &>div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: #fff;
+
+                    &:nth-child(1){
+                        min-height: 50%;
+                        
+                        i{
+                            font-size: 2.5em;
+                            color: #fff;
+                        }
+                        h4{
+                            text-align: center;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        p{
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .section3{
+        padding-top: 20px;
+        
+
+        &>h4{
+            font-size: 2em;
+        }
+
+        &>div{
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            &>div{
+                &:nth-child(1){
+                    &>div{
+                        background-image: url("../../img/inscription.webp");
+                    }
+                }
+                &:nth-child(2){
+                    &>div{
+                        background-image: url("../../img/justificatifs.jpg");
+                    }
+                }
+                &:nth-child(3){
+                    &>div{
+                        background-image: url("../../img/approved.webp");
+                    }
+                }
+                &>div{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    border: 3px solid $vertSombre1;
+                    position: relative;
+                    background-position: center center;
+                    background-size: cover;
+                    object-fit: contain;
+
+
+
+                    &>span{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        background-color: $vertSombre1;
+                        color: #fff;
+                        box-shadow: 0 0 5px $gris;
+                    }
+                }
+                h4{
+                    color:$vertSombre1;
+                    text-align: center;
+                    font-size: 1.3em;
+                }
+            }
+           
         }
     }
 
