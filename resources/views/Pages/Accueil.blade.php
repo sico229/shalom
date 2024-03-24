@@ -98,6 +98,9 @@
                 <p>Dès l'ouverture de votre compte et sur demande de votre part, nous vous envoyons à votre adresse votre
                     cate Visa</p>
                 <p>Nous vous offrons les meilleures solutions de payement avec les dernières technologie de sécurité</p>
+                <div>
+                    <a href="http://">Ouvrir un compte en ligne</a>
+                </div>
             </div>
             <div>
 
@@ -130,10 +133,12 @@
         <section class="section7">
             <div>
                 <div>
+                    <h4>Nos Offres de Prêt</h4>
+                    <p>Nous vous proposons différentes formules de prêts adaptées à vos besoins</p>
                     <ul id="accordion">
                         <li>
-                            <label for="express">Prêt Express<span class="dd">&#x3e;</span></label>
                             <input type="radio" name="accordion" id="express" checked>
+                            <label for="express">Prêt Express<span class="dd">&#x3e;</span></label>
                             <div class="contenter">
                                 <p>
                                     Le prêt Express est un prêt pouvant atteindre 2000€ et accessible en 72h à un taux de
@@ -145,8 +150,8 @@
                             </div>
                         </li>
                         <li>
-                            <label for="first">Prêt Consommation<span class="dd">&#x3e;</span></label>
                             <input type="radio" name="accordion" id="first">
+                            <label for="first">Prêt Consommation<span class="dd">&#x3e;</span></label>
                             <div class="contenter">
                                 <p>
                                     Le prêt consommation est un prêt destiné à vous accompagner dans vos besoin de financer
@@ -159,8 +164,8 @@
                             </div>
                         </li>
                         <li>
-                            <label for="second">Prêt Immobilier<span>&#x3e;</span></label>
                             <input type="radio" name="accordion" id="second">
+                            <label for="second">Prêt Immobilier<span>&#x3e;</span></label>
                             <div class="contenter">
                                 <p>
                                     Des projets de rénovation ou d'achat immobilier? Le prêt immobilier est tout indiqué
@@ -173,8 +178,8 @@
                             </div>
                         </li>
                         <li>
-                            <label for="third">Prêt Auto<span>&#x3e;</span></label>
                             <input type="radio" name="accordion" id="third">
+                            <label for="third">Prêt Auto<span>&#x3e;</span></label>
                             <div class="contenter">
                                 <p>
                                     Afin de vous accompagner dans vos projets automobile, nous vous proposons une formule de
@@ -190,9 +195,10 @@
                 <div>
                     <h4>Simuler votre Prêt</h4>
                     <p>Evaluez gratuitement votre demande de prêt sans engagement de votre part</p>
+                    <label for="typePret">Type de Prêt</label>
                     <select name="type" id="typePret">
                         <option value="">Type de Prêt</option>
-                        <option value="Prêt Express">Prêt Express</option>
+                        <option value="Prêt Express" selected>Prêt Express</option>
                         <option value="Prêt Consommation">Prêt Consommation </option>
                         <option value="Prêt Immobilier">Prêt Immobilier </option>
                         <option value="Prêt Auto">Prêt Auto </option>
@@ -212,8 +218,8 @@
                             <span class="indicator1">dd</span>
                         </div>
                         <div>
-                            <span>0</span>
-                            <input type="range" name="montant" id="montant" value="0" min="0" max="500000"
+                            <span>1000</span>
+                            <input type="range" name="montant" id="montant" value="1000" min="1000" max="500000"
                                 step="1000" class="montantInput">
                             <span>500000</span>
                         </div>
@@ -224,8 +230,8 @@
                             <span class="indicator1"></span>
                         </div>
                         <div>
-                            <span>0</span>
-                            <input type="range" name="montant" id="montant" value="0" min="0" max="500000"
+                            <span>500</span>
+                            <input type="range" name="montant" id="montant" value="1000" min="1000" max="500000"
                                 step="1000" class="montantInput">
                             <span>500000</span>
                         </div>

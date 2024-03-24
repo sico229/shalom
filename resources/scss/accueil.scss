@@ -145,7 +145,7 @@ section:not(.section1) {
 
     .section3{
         padding-top: 20px;
-        
+        padding-bottom: 20px;
 
         &>h4{
             font-size: 2em;
@@ -153,9 +153,14 @@ section:not(.section1) {
 
         &>div{
             display: flex;
-            justify-content: space-between;
-            width: 90%;
+            justify-content: space-around;
+            width: 85%;
             &>div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 25%;
+                gap: 10px;
                 &:nth-child(1){
                     &>div{
                         background-image: url("../../img/inscription.webp");
@@ -204,7 +209,294 @@ section:not(.section1) {
                     font-size: 1.3em;
                 }
             }
+
+            &>a{
+                background-color: $vertClair;
+                padding: 10px;
+                text-decoration: none;
+                color: #fff;
+                transition: 0.2s;
+
+                &:hover{
+                    background-color: $vertSombre1;
+                    transition: 0.2s;
+                }
+            }
            
+        }
+    }
+    .section4{
+        display: flex;
+        gap: 10px;
+        min-height: 90vh;
+        width: calc(95%);
+        padding: 40px;
+        background-color: #fff;
+        &>div{
+            width:90%;
+            margin: 0 auto; 
+             
+                     
+            &:nth-child(1){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+
+                h4{
+                    color: $vertSombre1;
+                    font-weight: bold;
+                    font-size: 1.6em;
+                    text-align: center;
+                }
+
+                div{
+                    display: flex;
+                    justify-content: center;
+
+                    &>a{
+                        background-color: $vertClair;
+                        padding: 10px;
+                        text-decoration: none;
+                        color: #fff;
+                        transition: 0.2s;
+        
+                        &:hover{
+                            background-color: $vertSombre1;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+
+                
+            }
+            &:nth-child(2){
+                width: 50%;
+                background-image: url('../../img/Banque-en-ligne.jpg');
+                background-position: center center;
+                background-size: cover;
+            }
+        }
+    }
+    .section5{
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../../img/bg.jpg');
+        background-position: center center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: calc(100vw - $largeurSideBar);
+        &::before{
+            background-color: #0c4e3a69;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        h4{
+            z-index: 2;
+            font-size: 1.8em;
+            color:#fff;
+            text-transform: uppercase;
+            position: relative;
+            text-shadow: 0 0 2px $vert1;
+        }
+    }
+    .section6{
+        display: flex;
+        gap: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 80%;
+
+        &>div{
+            width: calc(50% - 5px);
+            min-height: 70vh;
+            &:nth-child(1){
+               background-image: url('../../img/amiesshoppingete.jpg');
+               background-position: center center;
+               background-size: cover;
+              
+            }
+            &:nth-child(2){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h4{
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $vertSombre1;
+                }
+                p{
+                    font-size: 1.2em;
+                    
+
+                    &:nth-child(4){
+                        display: flex;
+                        justify-content: center;
+
+                        &>a{
+                            padding: 10px;
+                            color: #fff;
+                            text-decoration: none;
+                            background-color: $vert1;
+                            transition: 0.2s;
+
+                            &:hover{
+                                transition: 0.2s;
+                                background-color: $vertSombre1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section7{
+        min-width:85%;
+        min-height: 100vh;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #fff;
+        
+
+        &>div{
+            display: flex;            
+            gap: 5px;
+            &>div{
+                &:nth-child(1){
+                    width:calc(40% - 3px);
+                    margin: 0;
+                    padding: 0;
+
+                    &>h4{
+                        color:$vertSombre1;
+                        text-align: center;
+                        font-size: 1.5em;
+                    }
+                    #accordion{
+                        list-style-type: none;
+
+                        li{
+                            padding: 5px;
+                            box-shadow: 1px 1px 3px $gris;
+                            position: relative;
+                            margin: 5px 0;                            
+
+                            label{
+                                width: calc(100% - 20px);
+                                display: block;
+                                position: relative;
+                                cursor: pointer;
+                                padding: 15px 10px;
+                                background-color: $vertSombre1;
+                                color: #fff;
+
+                                span{
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 7px;
+                                    font-weight: bold;
+                                    color: #fff;
+                                    font-size: 1.5em;
+                                }
+                            }
+                            
+                            .contenter{
+                                height: 0;
+                                overflow: hidden;
+                                transition: 0.5s;
+
+                                p{
+                                    &:last-child{
+                                        display: flex;
+                                        justify-content: center;
+
+                                        a{
+                                            padding: 5px;
+                                            background-color: $vert1;
+                                            transition: 0.2s;
+                                            text-decoration: none;
+                                            color: #fff;
+
+                                            &:hover{
+                                                background-color: $vertSombre1;
+                                                transition: 0.2s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            input{ 
+                                display: none;
+                                &:checked + label{
+                                    span{
+                                        transform: rotate(90deg);
+                                        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                                    }
+                                }                              
+                                &:checked + label + .contenter{
+                                   height: 200px;
+                                   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+                                }
+                            }                         
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    padding: 10px 15px;
+                    width: calc(60% - 20px);
+
+                    &>h4{
+                        color: $vertSombre1;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 1.4em;
+                    }
+
+                    &>p{
+
+                        &:nth-child(1){
+                            font-size: 22px;
+                        }
+                    }
+
+                    &>label{
+                        display: block;
+                        width: 100%;
+                    }
+                    &>select{
+                        width: 50%;
+                        outline: none;
+                        padding: 5px;
+                        border: unset;
+                    }
+
+                    &>div{
+                        background-color: grey;
+                        &>p{
+                            span{
+                                color:$vertSombre1;
+                            }
+                        }
+
+                        &:nth-child(2){
+                            background-color: green;
+                        }                       
+                    }
+                }
+            }
         }
     }
 
